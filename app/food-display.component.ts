@@ -16,9 +16,22 @@ import {Food} from './food.model'
       <h4>{{ visible ? '&#x025BE;' : '&#x025B8;' }} Details</h4>
     </div>
     <div class="zippy__content" [hidden]="!visible">
-      This is some content.
+      <div class="row">
+        <div class="col-md-6">
+          <ul class="list-group ticketView">
+            <li class="list-group-item ticketView">
+              <span class="badge pull-left">Calories:</span>
+              {{food.calories}}
+            </li>
+            <li class="list-group-item ticketView">
+              <span class="badge pull-left">Details:</span>
+              {{food.details}}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+
 
   `
 })

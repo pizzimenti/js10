@@ -1,3 +1,11 @@
 h1 {
   color: blue;
 }
+
+h5 {
+  margin-left: 2em;
+}
+
+.badge {
+  margin-right: 15px;
+}

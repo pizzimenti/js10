@@ -9,3 +9,8 @@ h5 {
 .badge {
   margin-right: 15px;
 }
+
+input {
+  margin-left: 2em;
+  width: 50%;
+}

@@ -1,9 +1,11 @@
 import {Component} from 'angular2/core';
 import {Food} from './food.model'
+import {EditFoodComponent} from './edit-food.component';
 
 @Component({
   selector: 'food-display',
   inputs: ['food'],
+  directives: [EditFoodComponent],
   template: `
   <h3
     (click)="foodClicked(food)"
@@ -28,6 +30,7 @@ import {Food} from './food.model'
               {{food.details}}
             </li>
           </ul>
+          <edit-food [food]="food"></edit-food>
         </div>
       </div>
     </div>

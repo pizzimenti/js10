@@ -3,5 +3,5 @@
   <option value="under300">Healthy (under 300cal)</option>
 </select>
 <new-food (onSubmitNewFood)="createFood($event)"></new-food>
-<food-display *ngFor="#currentFood of foodList" [food]="currentFood">
+<food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"  [food]="currentFood">
 </food-display>

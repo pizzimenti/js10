@@ -1,6 +1,7 @@
 <select (change)="onChange($event.target.value)" class="filter">
   <option value="all">Show All</option>
   <option value="under300">Healthy (under 300cal)</option>
+  <option value="over300">Unhealthy (300+ calories)</option>
 </select>
 <new-food (onSubmitNewFood)="createFood($event)"></new-food>
 <food-display *ngFor="#currentFood of foodList | healthy:filterHealthy"  [food]="currentFood">
